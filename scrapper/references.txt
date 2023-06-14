@@ -1,0 +1,84 @@
+Clark AL, Cleland JG. Causes and treatment of oedema in patients with heart failure. Nat Rev Cardiol 2013; 10:156.
+Huppert LA, Matthay MA, Ware LB. Pathogenesis of Acute Respiratory Distress Syndrome. Semin Respir Crit Care Med 2019; 40:31.
+Ware LB, Matthay MA. Clinical practice. Acute pulmonary edema. N Engl J Med 2005; 353:2788.
+Scheel PJ, Liu M, Rabb H. Uremic lung: new insights into a forgotten condition. Kidney Int 2008; 74:849.
+Fein A, Grossman RF, Jones JG, et al. The value of edema fluid protein measurement in patients with pulmonary edema. Am J Med 1979; 67:32.
+Ware LB, Matthay MA. The acute respiratory distress syndrome. N Engl J Med 2000; 342:1334.
+Montgomery AB, Stager MA, Carrico CJ, Hudson LD. Causes of mortality in patients with the adult respiratory distress syndrome. Am Rev Respir Dis 1985; 132:485.
+Kanner C, Hardy SM. An unusual cause of unilateral pulmonary edema. Ann Intern Med 2013; 158:639.
+Neerukonda SK, Petty TL. Unilateral pulmonary edema. Hosp Pract (Off Ed) 1992; 27:85, 88.
+Calenoff L, Kruglik GD, Woodruff A. Unilateral pulmonary edema. Radiology 1978; 126:19.
+Attias D, Mansencal N, Auvert B, et al. Prevalence, characteristics, and outcomes of patients presenting with cardiogenic unilateral pulmonary edema. Circulation 2010; 122:1109.
+Kesävuori RI, Vento AE, Lundbom NMI, et al. Unilateral pulmonary oedema after minimally invasive and robotically assisted mitral valve surgery. Eur J Cardiothorac Surg 2020; 57:504.
+Jardin F, Fourme T, Page B, et al. Persistent preload defect in severe sepsis despite fluid loading: A longitudinal echocardiographic study in patients with septic shock. Chest 1999; 116:1354.
+Dunham-Snary KJ, Wu D, Sykes EA, et al. Hypoxic Pulmonary Vasoconstriction: From Molecular Mechanisms to Medicine. Chest 2017; 151:181.
+Morrison LK, Harrison A, Krishnaswamy P, et al. Utility of a rapid B-natriuretic peptide assay in differentiating congestive heart failure from lung disease in patients presenting with dyspnea. J Am Coll Cardiol 2002; 39:202.
+Komiya K, Akaba T, Kozaki Y, et al. A systematic review of diagnostic methods to differentiate acute lung injury/acute respiratory distress syndrome from cardiogenic pulmonary edema. Crit Care 2017; 21:228.
+Determann RM, Royakkers AA, Schaefers J, et al. Serum levels of N-terminal proB-type natriuretic peptide in mechanically ventilated critically ill patients--relation to tidal volume size and development of acute respiratory distress syndrome. BMC Pulm Med 2013; 13:42.
+Sun YZ, Gao YL, Yu QX, et al. Assessment of acute lung injury/acute respiratory distress syndrome using B-type brain natriuretic peptide. J Int Med Res 2015; 43:802.
+Schmickl CN, Pannu S, Al-Qadi MO, et al. Decision support tool for differential diagnosis of Acute Respiratory Distress Syndrome (ARDS) vs Cardiogenic Pulmonary Edema (CPE): a prospective validation and meta-analysis. Crit Care 2014; 18:659.
+García-Laorden MI, Lorente JA, Flores C, et al. Biomarkers for the acute respiratory distress syndrome: how to make the diagnosis more precise. Ann Transl Med 2017; 5:283.
+Nanjappa S, Jeong DK, Muddaraju M, et al. Diffuse Alveolar Hemorrhage in Acute Myeloid Leukemia. Cancer Control 2016; 23:272.
+Federici AB, Intini D, Lattuada A, et al. Supportive transfusion therapy in cancer patients with acquired defects of hemostasis. Thromb Res 2014; 133 Suppl 2:S56.
+Sears CR, Peikert T, Possick JD, et al. Knowledge Gaps and Research Priorities in Immune Checkpoint Inhibitor-related Pneumonitis. An Official American Thoracic Society Research Statement. Am J Respir Crit Care Med 2019; 200:e31.
+Cheng IW, Matthay MA. Acute lung injury and the acute respiratory distress syndrome. Crit Care Clin 2003; 19:693.
+Mi MY, Matthay MA, Morris AH. Extracorporeal Membrane Oxygenation for Severe Acute Respiratory Distress Syndrome. N Engl J Med 2018; 379:884.
+Humphrey H, Hall J, Sznajder I, et al. Improved survival in ARDS patients associated with a reduction in pulmonary capillary wedge pressure. Chest 1990; 97:1176.
+Vignon P, Evrard B, Asfar P, et al. Fluid administration and monitoring in ARDS: which management? Intensive Care Med 2020; 46:2252.
+National Heart, Lung, and Blood Institute Acute Respiratory Distress Syndrome (ARDS) Clinical Trials Network, Wiedemann HP, Wheeler AP, et al. Comparison of two fluid-management strategies in acute lung injury. N Engl J Med 2006; 354:2564.
+Lewis SR, Pritchard MW, Thomas CM, Smith AF. Pharmacological agents for adults with acute respiratory distress syndrome. Cochrane Database Syst Rev 2019; 7:CD004477.
+National Heart, Lung, and Blood Institute ARDS Clinical Trials Network, Truwit JD, Bernard GR, et al. Rosuvastatin for sepsis-associated acute respiratory distress syndrome. N Engl J Med 2014; 370:2191.
+Touchon F, Trigui Y, Prud'homme E, et al. Awake prone positioning for hypoxaemic respiratory failure: past, COVID-19 and perspectives. Eur Respir Rev 2021; 30.
+Kor DJ, Carter RE, Park PK, et al. Effect of Aspirin on Development of ARDS in At-Risk Patients Presenting to the Emergency Department: The LIPS-A Randomized Clinical Trial. JAMA 2016; 315:2406.
+Malhotra A, Drazen JM. High-frequency oscillatory ventilation on shaky ground. N Engl J Med 2013; 368:863.
+Milberg JA, Davis DR, Steinberg KP, Hudson LD. Improved survival of patients with acute respiratory distress syndrome (ARDS): 1983-1993. JAMA 1995; 273:306.
+Zambon M, Vincent JL. Mortality rates for patients with acute lung injury/ARDS have decreased over time. Chest 2008; 133:1120.
+Bellani G, Laffey JG, Pham T, et al. Epidemiology, Patterns of Care, and Mortality for Patients With Acute Respiratory Distress Syndrome in Intensive Care Units in 50 Countries. JAMA 2016; 315:788.
+Herridge MS, Tansey CM, Matté A, et al. Functional disability 5 years after acute respiratory distress syndrome. N Engl J Med 2011; 364:1293.
+Sasannejad C, Ely EW, Lahiri S. Long-term cognitive impairment after acute respiratory distress syndrome: a review of clinical impact and pathophysiological mechanisms. Crit Care 2019; 23:352.
+Bärtsch P, Swenson ER. Clinical practice: Acute high-altitude illnesses. N Engl J Med 2013; 368:2294.
+Luks AM, Swenson ER, Bärtsch P. Acute high-altitude sickness. Eur Respir Rev 2017; 26.
+Finsterer J. Neurological Perspectives of Neurogenic Pulmonary Edema. Eur Neurol 2019; 81:94.
+Busl KM, Bleck TP. Neurogenic Pulmonary Edema. Crit Care Med 2015; 43:1710.
+Mayer E, Jenkins D, Lindner J, et al. Surgical management and outcome of patients with chronic thromboembolic pulmonary hypertension: results from an international prospective registry. J Thorac Cardiovasc Surg 2011; 141:702.
+Piazza G, Goldhaber SZ. Chronic thromboembolic pulmonary hypertension. N Engl J Med 2011; 364:351.
+Papamatheakis DG, Poch DS, Fernandes TM, et al. Chronic Thromboembolic Pulmonary Hypertension: JACC Focus Seminar. J Am Coll Cardiol 2020; 76:2155.
+Boulate D, Mercier O, Mussot S, et al. Extracorporeal Life Support After Pulmonary Endarterectomy as a Bridge to Recovery or Transplantation: Lessons From 31 Consecutive Patients. Ann Thorac Surg 2016; 102:260.
+Martin-Suarez S, Gliozzi G, Fiorentino M, et al. Role and management of extracorporeal life support after surgery of chronic thromboembolic pulmonary hypertension. Ann Cardiothorac Surg 2019; 8:84.
+Sohara Y. Reexpansion pulmonary edema. Ann Thorac Cardiovasc Surg 2008; 14:205.
+Yoon JS, Suh JH, Choi SY, et al. Risk factors for the development of reexpansion pulmonary edema in patients with spontaneous pneumothorax. J Cardiothorac Surg 2013; 8:164.
+Taira N, Kawabata T, Ichi T, et al. An analysis of and new risk factors for reexpansion pulmonary edema following spontaneous pneumothorax. J Thorac Dis 2014; 6:1187.
+Mynarek G, Brabrand K, Jakobsen JA, Kolbenstvedt A. Complications following ultrasound-guided thoracocentesis. Acta Radiol 2004; 45:519.
+Jones PW, Moyers JP, Rogers JT, et al. Ultrasound-guided thoracentesis: is it a safer method? Chest 2003; 123:418.
+Feller-Kopman D, Berkowitz D, Boiselle P, Ernst A. Large-volume thoracentesis and the risk of reexpansion pulmonary edema. Ann Thorac Surg 2007; 84:1656.
+Lin YJ, Yu YH. Reexpansion pulmonary edema after large-volume thoracentesis. Ann Thorac Surg 2011; 92:1550.
+Gleeson T, Thiessen R, Müller N. Reexpansion pulmonary edema: computed tomography findings in 22 patients. J Thorac Imaging 2011; 26:36.
+Sherman SC. Reexpansion pulmonary edema: a case report and review of the current literature. J Emerg Med 2003; 24:23.
+Sagar AES, Landaeta MF, Adrianza AM, et al. Complications following symptom-limited thoracentesis using suction. Eur Respir J 2020; 56.
+Osler W. Oedema of the left lung—morphia poisoning. Montreal General Hospital Reports Clinical and Pathological, vol 1, Dawson Bros Publishers, Montreal 1880. p.291.
+Dezfulian C, Orkin AM, Maron BA, et al. Opioid-Associated Out-of-Hospital Cardiac Arrest: Distinctive Clinical Features and Implications for Health Care and Public Responses: A Scientific Statement From the American Heart Association. Circulation 2021; 143:e836.
+Farkas A, Lynch MJ, Westover R, et al. Pulmonary Complications of Opioid Overdose Treated With Naloxone. Ann Emerg Med 2020; 75:39.
+Radke JB, Owen KP, Sutter ME, et al. The effects of opioids on the lung. Clin Rev Allergy Immunol 2014; 46:54.
+Dettmeyer R, Schmidt P, Musshoff F, et al. Pulmonary edema in fatal heroin overdose: immunohistological investigations with IgE, collagen IV and laminin - no increase of defects of alveolar-capillary membranes. Forensic Sci Int 2000; 110:87.
+Sporer KA, Dorn E. Heroin-related noncardiogenic pulmonary edema : a case series. Chest 2001; 120:1628.
+Cobaugh DJ, Gainor C, Gaston CL, et al. The opioid abuse and misuse epidemic: implications for pharmacists in hospitals and health systems. Am J Health Syst Pharm 2014; 71:1539.
+Winklhofer S, Surer E, Ampanozi G, et al. Post-mortem whole body computed tomography of opioid (heroin and methadone) fatalities: frequent findings and comparison to autopsy. Eur Radiol 2014; 24:1276.
+Heffner JE, Sahn SA. Salicylate-induced pulmonary edema. Clinical features and prognosis. Ann Intern Med 1981; 95:405.
+Glisson JK, Vesa TS, Bowling MR. Current management of salicylate-induced pulmonary edema. South Med J 2011; 104:225.
+Papacostas MF, Hoge M, Baum M, Davila SZ. Use of continuous renal replacement therapy in salicylate toxicity: A case report and review of the literature. Heart Lung 2016; 45:460.
+Almeida F, Amorim S, Sarmento A, Santos L. Life-Threatening Everolimus-Associated Pneumonitis: A Case Report and a Review of the Literature. Transplant Proc 2018; 50:933.
+Wang WL, Yu LX. Acute respiratory distress attributed to sirolimus in solid organ transplant recipients. Am J Emerg Med 2015; 33:124.e1.
+Agnelli G, Becattini C. Acute pulmonary embolism. N Engl J Med 2010; 363:266.
+Jaber WA, Fong PP, Weisz G, et al. Acute Pulmonary Embolism: With an Emphasis on an Interventional Approach. J Am Coll Cardiol 2016; 67:991.
+Porcel JM, Light RW. Pleural effusions due to pulmonary embolism. Curr Opin Pulm Med 2008; 14:337.
+Brown SE, Light RW. Pleural effusion associated with pulmonary embolization. Clin Chest Med 1985; 6:77.
+Porcel JM, Madroñero AB, Pardina M, et al. Analysis of pleural effusions in acute pulmonary embolism: radiological and pleural fluid data from 230 patients. Respirology 2007; 12:234.
+Peters CJ, Khan AS. Hantavirus pulmonary syndrome: the new American hemorrhagic fever. Clin Infect Dis 2002; 34:1224.
+Ho M, Chen ER, Hsu KH, et al. An epidemic of enterovirus 71 infection in Taiwan. Taiwan Enterovirus Epidemic Working Group. N Engl J Med 1999; 341:929.
+Ksiazek TG, Erdman D, Goldsmith CS, et al. A novel coronavirus associated with severe acute respiratory syndrome. N Engl J Med 2003; 348:1953.
+Wolf T, Kann G, Becker S, et al. Severe Ebola virus disease with vascular leakage and multiorgan failure: treatment of a patient in intensive care. Lancet 2015; 385:1428.
+Arquès S, Ambrosi P, Gélisse R, et al. Hypoalbuminemia in elderly patients with acute diastolic heart failure. J Am Coll Cardiol 2003; 42:712.
+Uthamalingam S, Kandala J, Daley M, et al. Serum albumin and mortality in acutely decompensated heart failure. Am Heart J 2010; 160:1149.
+Bonilla-Palomas JL, Gámez-López AL, Moreno-Conde M, et al. Hypoalbuminemia in acute heart failure patients: causes and its impact on hospital and long-term mortality. J Card Fail 2014; 20:350.
+González-Pacheco H, Amezcua-Guerra LM, Sandoval J, et al. Prognostic Implications of Serum Albumin Levels in Patients With Acute Coronary Syndromes. Am J Cardiol 2017; 119:951.
+Taylor AE. Capillary fluid filtration. Starling forces and lymph flow. Circ Res 1981; 49:557.
