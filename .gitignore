@@ -1,3 +1,5 @@
 webapp/node_modules/
 scrapper/papers/
 
+__pycache__
+.env
