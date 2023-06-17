@@ -40,14 +40,6 @@ async def debug():
     return StreamingResponse(counter(), media_type="text/event-stream")
 
 
-@app.get("/ask")
-async def ask(question: str):
-    return StreamingResponse(
-        ai.ask(question),
-        media_type="text/event-stream"
-    )
-
-
 @app.get("/ask/stream")
 async def root(question: str):
     return StreamingResponse(
