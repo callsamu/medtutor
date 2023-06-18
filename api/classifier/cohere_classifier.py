@@ -6,7 +6,7 @@ from cohere import Client, AsyncClient
 
 class CohereClassifier(BaseClassifier):
     cohere: Client
-    api_key: key
+    api_key: str
 
     def __init__(self):
         self.api_key = environ.get("COHERE_API_KEY") or ""
