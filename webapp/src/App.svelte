@@ -36,19 +36,17 @@
 	function ask(question: string) {
 	  chat = [...chat, {content: question, author: "user"}];
 
-	  const url = new URL("http://localhost:8000/debug/stream");
+	  const url = new URL("http://localhost:8000/ask/stream");
 		url.searchParams.append("question", question);
 
 		const source = new EventSource(url);
 
 		source.onmessage = event => {
 			const { token } = JSON.parse(event.data);
+			console.log(token);
 
 			const ce = chatElement;
-
-			if (lockScroll) {
-				ce.scrollTop = ce.scrollHeight;
-			}
+			if (lockScroll) ce.scrollTop = ce.scrollHeight;
 
 			answerTokens = [...answerTokens, token];
 		};
