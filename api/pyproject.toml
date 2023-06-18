@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "medtutor-api"
+version = "0.1.0"
+description = "API for Medtutor Chat"
+authors = ["callsamu <samuelbree@gmail.com>"]
+readme = "README.md"
+packages = [{include = "medtutor_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.202"
+fastapi = "^0.97.0"
+cohere = "^4.11.2"
+openai = "^0.27.8"
+uvicorn = "^0.22.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
