@@ -1,4 +1,5 @@
-from .classifier import Classifier
+from .base import BaseClassifier
+from .cohere_classifier import CohereClassifier
 
 from .examples import (
     CONVERSATIONAL,

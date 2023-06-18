@@ -1,4 +1,4 @@
-from .classifier import Classifier
+from .cohere_classifier import CohereClassifier
 from .examples import (
     CONVERSATIONAL,
     DOMAIN_SPECIFIC_QUESTION,
@@ -8,7 +8,7 @@ from .examples import (
 
 
 def test_classifier():
-    classifier = Classifier()
+    classifier = CohereClassifier()
 
     got = classifier.classify("HELLO")
     assert got == CONVERSATIONAL
