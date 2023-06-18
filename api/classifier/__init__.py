@@ -1,4 +1,5 @@
 from .base import BaseClassifier
+from .mock_classifier import MockClassifier
 from .cohere_classifier import CohereClassifier
 
 from .examples import (
