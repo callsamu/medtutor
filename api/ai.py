@@ -33,7 +33,7 @@ class AI:
     ) -> ClassifyRouterChain:
         llm = Cohere(client=None, model='command-light', temperature=0.3)
 
-        streaming_llm = ChatOpenAI(
+        streaming_llm = Cohere(
             client=None,
             model='command',
             temperature=0.5,
@@ -65,7 +65,9 @@ class AI:
             classifier=self.classify,
             destination_chains=routes,
             default_chain=LLMChain(
-                llm=llm, prompt=CONVERSATION_PROMPT
+                llm=streaming_llm,
+                prompt=CONVERSATION_PROMPT,
+                output_key="answer"
             )
         )
 
