@@ -48,3 +48,30 @@ class ClassifyRouterChain(Chain):
                 inputs[key] = _input
 
         return chain(inputs, callbacks=callbacks)
+
+    async def _acall(
+        self,
+        inputs: dict[str, Any],
+        run_manager: Optional[CallbackManagerForChainRun] = None,
+    ) -> dict[str, Any]:
+        _run_manager = run_manager or CallbackManagerForChainRun.get_noop_manager()
+        callbacks = _run_manager.get_child()
+
+        callbacks = _run_manager.get_child()
+        _input = inputs[self.routing_key]
+        destination = await self.classifier.aclassify(_input)
+
+        chain = self.default_chain
+        if destination not in self.destination_chains:
+            if self.raise_error:
+                message = "Received invalid destination chain name "
+                message += f"'{destination}'"
+                raise ValueError(message)
+        else:
+            chain = self.destination_chains[destination]
+
+        for key in chain.input_keys:
+            if key not in inputs:
+                inputs[key] = _input
+
+        return await chain.acall(inputs, callbacks=callbacks)

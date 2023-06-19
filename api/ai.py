@@ -2,46 +2,43 @@ import asyncio
 import json
 from typing import AsyncIterable, Awaitable
 
-from prompts import CONDENSE_QUESTION_PROMPT
+from langchain.llms import Cohere
+from langchain.chat_models import ChatOpenAI
 from langchain.chains.llm import LLMChain
 from langchain.schema import BaseRetriever
-from langchain.chat_models import ChatOpenAI
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.callbacks import AsyncIteratorCallbackHandler
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
-from langchain.chains.question_answering.map_reduce_prompt import COMBINE_PROMPT
+
+import classifier
+from router import ClassifyRouterChain
+from prompts import CONDENSE_QUESTION_PROMPT, COMBINE_PROMPT, CONVERSATION_PROMPT
+
 
 Result = dict[str, str]
 
 
 class AI:
     chat_history = []
+    classify: classifier.BaseClassifier
 
     def __init__(self, retriever: BaseRetriever):
         self.retriever = retriever
+        self.classify = classifier.CohereClassifier()
 
-    def _load_conversation_chain(
+    def _load_router(
         self,
         callbacks: list[BaseCallbackHandler] = []
-    ) -> ConversationalRetrievalChain:
-        llm = ChatOpenAI(
-            client=None,
-            verbose=True,
-            temperature=0.5,
-        )
-
-        question_generator = LLMChain(
-            llm=llm,
-            prompt=CONDENSE_QUESTION_PROMPT,
-            verbose=True,
-        )
+    ) -> ClassifyRouterChain:
+        llm = Cohere(client=None, model='command-light', temperature=0.3)
 
         streaming_llm = ChatOpenAI(
             client=None,
+            model='command',
             temperature=0.5,
             streaming=True,
-            callbacks=[*callbacks],
+            callbacks=[*callbacks]
         )
 
         doc_chain = load_qa_with_sources_chain(
@@ -51,32 +48,33 @@ class AI:
             chain_type="map_reduce",
         )
 
-        return ConversationalRetrievalChain(
+        qa = ConversationalRetrievalChain(
             retriever=self.retriever,
             combine_docs_chain=doc_chain,
-            question_generator=question_generator,
+            question_generator=LLMChain(
+                llm=llm, prompt=CONDENSE_QUESTION_PROMPT,
+            ),
             return_generated_question=True,
-            return_source_documents=True,
         )
 
-    async def ask(self, question: str) -> AsyncIterable[str]:
-        qa = self._load_conversation_chain()
-        result = qa({
-            "question": question,
-            "chat_history": self.chat_history,
-        })
-        answer = result["answer"]
-        self.chat_history.append((question, answer))
+        routes = {
+            classifier.DOMAIN_SPECIFIC_QUESTION: qa,
+        }
 
-        data = json.dumps({"token": answer})
-        yield f"data: {data}\n\n"
+        return ClassifyRouterChain(
+            classifier=self.classify,
+            destination_chains=routes,
+            default_chain=LLMChain(
+                llm=llm, prompt=CONVERSATION_PROMPT
+            )
+        )
 
     async def ask_stream(
         self,
         question: str,
     ) -> AsyncIterable[str]:
         callback = AsyncIteratorCallbackHandler()
-        qa = self._load_conversation_chain([callback])
+        qa = self._load_router([callback])
 
         async def wrap_done(fn: Awaitable, event: asyncio.Event) -> Result:
             try:
@@ -89,7 +87,7 @@ class AI:
                 event.set()
 
         inputs = {
-            "question": question,
+            "input": question,
             "chat_history": self.chat_history,
         }
         task = asyncio.create_task(wrap_done(
