@@ -2,4 +2,4 @@ include .env
 
 .PHONY: run
 run:
-	uvicorn main:app --reload
+	poetry run uvicorn main:app --reload
