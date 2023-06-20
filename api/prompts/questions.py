@@ -1,18 +1,4 @@
-from langchain.prompts.prompt import PromptTemplate
-
-CONVERSATION_TEMPLATE = """The following is a friendly conversation between
-a human and an AI. The AI is talkative and provides lots of specific details
-from its context. If the AI does not know the answer to a question, it
-truthfully says it does not know.
-
-Current conversation:
-{history}
-Human: {input}
-AI:"""
-CONVERSATION_PROMPT = PromptTemplate(
-    input_variables=["chat_history", "input"],
-    template=CONVERSATION_TEMPLATE
-)
+from langchain.prompts import PromptTemplate
 
 CONDENSE_QUESTION_TEMPLATE = """
 Given the following conversation and a follow up question, rephrase the
@@ -62,6 +48,6 @@ QUESTION: {question}
 {summaries}
 =========
 FINAL ANSWER:"""
-COMBINE_PROMPT = PromptTemplate(
+QUESTION_COMBINE_PROMPT = PromptTemplate(
     template=COMBINE_PROMPT_TEMPLATE, input_variables=["summaries", "question"]
 )

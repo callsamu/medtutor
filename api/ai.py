@@ -11,9 +11,9 @@ from langchain.callbacks import AsyncIteratorCallbackHandler
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 
+import prompts
 import classifier
 from router import ClassifyRouterChain
-from prompts import CONDENSE_QUESTION_PROMPT, COMBINE_PROMPT, CONVERSATION_PROMPT
 
 
 Result = dict[str, str]
@@ -33,9 +33,8 @@ class AI:
     ) -> ClassifyRouterChain:
         llm = Cohere(client=None, model='command-light', temperature=0.3)
 
-        streaming_llm = Cohere(
+        streaming_llm = ChatOpenAI(
             client=None,
-            model='command',
             temperature=0.5,
             streaming=True,
             callbacks=[*callbacks]
@@ -43,7 +42,7 @@ class AI:
 
         doc_chain = load_qa_with_sources_chain(
             llm=llm,
-            combine_prompt=COMBINE_PROMPT,
+            combine_prompt=prompts.QUESTION_COMBINE_PROMPT,
             reduce_llm=streaming_llm,
             chain_type="map_reduce",
         )
@@ -52,7 +51,7 @@ class AI:
             retriever=self.retriever,
             combine_docs_chain=doc_chain,
             question_generator=LLMChain(
-                llm=llm, prompt=CONDENSE_QUESTION_PROMPT,
+                llm=llm, prompt=prompts.CONDENSE_QUESTION_PROMPT,
             ),
             return_generated_question=True,
         )
@@ -66,7 +65,7 @@ class AI:
             destination_chains=routes,
             default_chain=LLMChain(
                 llm=streaming_llm,
-                prompt=CONVERSATION_PROMPT,
+                prompt=prompts.CONVERSATION_PROMPT,
                 output_key="answer"
             )
         )
@@ -83,7 +82,6 @@ class AI:
                 result = await fn
                 return result
             except Exception as e:
-                print(f"Error: {e}")
                 raise e
             finally:
                 event.set()
