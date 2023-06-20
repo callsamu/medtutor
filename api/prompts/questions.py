@@ -15,7 +15,6 @@ CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(CONDENSE_QUESTION_TEMPLA
 COMBINE_PROMPT_TEMPLATE = """Given the following extracted parts of a long document and a 
 question, create a detailed final answer with references ("SOURCES"). If you don't know the 
 answer, just say that you don't know. Don't try to make up an answer.
-ALWAYS return a "SOURCES" part in your answer.
 
 QUESTION: Which state/country's law governs the interpretation of the contract?
 =========
