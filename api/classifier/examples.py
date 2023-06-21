@@ -4,8 +4,8 @@ from cohere.responses.classify import Example
 
 CONVERSATIONAL = "conversational"
 QUESTION = "question"
-DOMAIN_SPECIFIC_QUESTION = "domain_specific_question"
-DOMAIN_SPECIFIC_TASK = "domain_specific_task"
+DOMAIN_SPECIFIC_QUESTION = "medicine_related_question"
+DOMAIN_SPECIFIC_TASK = "medicine_related_task"
 
 
 def _conversational(text: str) -> Example:
@@ -34,7 +34,11 @@ classifier_examples: List[Example] = [
     _question("Você pode me ajudar no meu TCC?"),
     _question("Dengue cases in Brasil increased by 70%. Do you understand?"),
 
+
+    _ds_question("What are it's major symptoms?"),
+    _ds_question("What causes it?"),
     _ds_question("What is an acute lung edema?"),
+    _ds_question("What causes an infarction?"),
     _ds_question("What dosage of furosemide is adequate for acute lung edema"),
     _ds_question("What is yellow fever"),
     _ds_question("Quais são os sintomas de um AVC?"),
