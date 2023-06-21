@@ -6,7 +6,7 @@ from langchain.chains.base import Chain
 from langchain.callbacks.manager import CallbackManagerForChainRun
 
 
-class ConversationalClassifyRouterChain(Chain):
+class ClassifyRouterChain(Chain):
     classifier: BaseClassifier
     destination_chains: Mapping[str, Chain]
     default_chain: Chain

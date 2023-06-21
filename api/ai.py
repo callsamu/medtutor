@@ -13,7 +13,7 @@ from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 
 import prompts
 import classifier
-from router import ConversationalClassifyRouterChain
+from router import ClassifyRouterChain
 
 
 Result = dict[str, str]
@@ -30,7 +30,7 @@ class AI:
     def _load_router(
         self,
         callbacks: list[BaseCallbackHandler] = []
-    ) -> ConversationalClassifyRouterChain:
+    ) -> ClassifyRouterChain:
         llm = Cohere(client=None, model='command-light', temperature=0.3)
 
         streaming_llm = ChatOpenAI(
@@ -60,7 +60,7 @@ class AI:
             classifier.DOMAIN_SPECIFIC_QUESTION: qa,
         }
 
-        return ConversationalClassifyRouterChain(
+        return ClassifyRouterChain(
             classifier=self.classify,
             destination_chains=routes,
             default_chain=LLMChain(
