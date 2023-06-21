@@ -13,7 +13,7 @@ from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 
 import prompts
 import classifier
-from router import ClassifyRouterChain
+from chains import ClassifyRouterChain
 
 
 Result = dict[str, str]
