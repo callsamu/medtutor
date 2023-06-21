@@ -14,7 +14,7 @@ class DocumentSearcher:
     def __init__(self):
         client = qdrant_client.QdrantClient(
             api_key=environ.get("QDRANT_API_KEY"),
-            url=environ.get("QDRANT_HOST"),
+            host=environ.get("QDRANT_HOST"),
             prefer_grpc=True,
         )
         embeddings = OpenAIEmbeddings(client=None)
